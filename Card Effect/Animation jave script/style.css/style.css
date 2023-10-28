@@ -135,14 +135,13 @@
       font-size: 3vw;
     }
   }
-
-  @media
   
-  @media screen(min-width: 360px) {
-    .nav h1,
-    .slider h1 {
-      font-size: 8vw;
-    }
+@media screen and (min-width: 360px) {
+  .nav h1,
+  .slider h1 {
+    font-size: 8vw;
+  }
+}
   
     .nav h2,
     .slider h2 {
@@ -153,7 +152,7 @@
     .nav-tab {
       font-size: 1.2vw;
     }
-  }
+  
   .background {
     position: absolute;
     height: 100vh;
@@ -169,7 +168,7 @@
     -webkit-animation: loading 1s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes loading {
+  -webkit-keyframes loading {
     to {
       text-shadow: 20px 0 70px #ff0266;
       color: #ff0266;
