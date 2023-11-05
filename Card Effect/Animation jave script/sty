@@ -1,0 +1,45 @@
+{
+    "is_store_compatible": false,
+    "sites_preview_url": "http://logistics-demo.zohosites.com",
+    "author": "Sadeq Al-Robaii",
+    "template_engine_version": 1,
+    "version": "20230621.0",
+    "store_preview_images": ["images/store-preview.jpg"],
+    "base_design_id": "zs100000",
+    "stylesheets": ["stylesheets/sub-style.css"],
+    "template_default": {
+        "blog_social_share_options": {
+            "style": "05",
+            "show_count": false,
+            "align": "right"
+        },
+        "show_site_name": true,
+        "show_site_logo": true,
+        "show_site_caption": false
+    },
+    "fonts": "Spectral:400,600,700/PT Sans:400,600,700",
+    "price": 2,
+    "design_id": "logistics",
+    "name": "Logistics",
+    "preview_images": ["images/preview.jpg"],
+    "default_layout_vars": {
+        "maxmenuitem": "5",
+        "header_style": "05",
+        "header_effect": "none",
+        "is_mobile_site_caption_enabled": "false",
+        "blog_post_style": "02",
+        "blog_list_style": "02",
+        "is_social_icon_floater_enabled": "false",
+        "submenu_style": "02",
+        "is_mobile_site_title_enabled": "true",
+        "header_background": "default",
+        "breadcrumb_style": "02",
+        "topbar_background": "default",
+        "is_mobile_logo_enabled": "false",
+        "banner_style": "full-width",
+        "is_mobile_header_fixed": "false",
+        "navigation_background": "light"
+    },
+    "author_email": "sadeq@bluetriangle.ae",
+    "is_landing_page_compatible": false
+}
