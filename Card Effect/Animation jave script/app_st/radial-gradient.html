@@ -30,9 +30,50 @@
     --x:100%;
   }
 }
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #009bdf 20%,
+    #00a9fa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  background-size: 500% auto;
+  animation: animatedGradient 3s ease-in-out infinite;
+  animation-play-state: running;
+}
+
+.container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 </style>
-<body>
-    <div id="shine-div"></div>
+<div id="shine-div">
+<body  class="container">
+ 
 
     <div id="shine-div">
    <svg xmlns="http://www.w3.org/2000/svg" 
@@ -46,17 +87,7 @@
 	    <stop offset="50%" stop-color ="#b300b3" /> 		 
   </radialGradient>
    </defs> 
-    <g id="gr1" > 
-      <rect id="rect1" fill="url(#radGrad)" x="5%" y="5%" width="95%" height="95%" rx="10%"/> 
-       <text class="txt" x="50%" y="60%"> 
-        <article class="p-1.5 mx-auto my-4 max-w-sm rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
-  <div class="bg-white p-5 rounded-lg">
-    <h4 class="text-2xl font-bold">Take your Web Dev skills to the next level!</h4>
-    <a class="hover:underline text-gray-600"  target="_blank" title="codingspace">Visit CodingSpace↗</a>
-    </a>
-</article>
-        </text>
-	</g>  
+  
     <animate xlink:href="#radGrad"
 	  attributeName="fx"
 	  dur="3s"begin="gr1.click"
@@ -67,4 +98,5 @@
   </svg>
 </div>
     </body>
+</div>
 </html>
